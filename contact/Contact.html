@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>Travel India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../destination/destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="../Hotel-content/Hotels.html" class="nav-link">Hotels</a></li>
+                <li><a href="../package/package.html" class="nav-link">Packages</a></li>
+                <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <h2 class="section-title">Contact Information</h2>
+            <p class="section-subtitle">Choose your preferred way to reach us</p>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+91 12345 67890</p>
+                    <a href="tel:+911234567890" class="card-link">Call Now</a>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>support@travelindia.com</p>
+                    <a href="mailto:support@travelindia.com" class="card-link">Send Email</a>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Office Address</h3>
+                    <p>Travel India Pvt. Ltd.,<br>Mumbai, Maharashtra, India</p>
+                    <a href="#map" class="card-link">View on Map</a>
+                </div>
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Working Hours</h3>
+                    <p>Mon - Sat<br>9 AM - 7 PM</p>
+                    <span class="card-link inactive">Visit Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Send Us a Message</h2>
+            <p class="section-subtitle">Fill out the form below and we'll get back to you as soon as possible</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" required>
+                    <label for="name" class="form-label">Name</label>
+                    <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" required>
+                    <label for="email" class="form-label">Email</label>
+                    <span class="form-error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <span class="form-error" id="phoneError"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+                    <label for="subject" class="form-label">Subject</label>
+                    <span class="form-error" id="subjectError"></span>
+                </div>
+                <div class="form-group full-width">
+                    <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <span class="form-error" id="messageError"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title">Find Us on Map</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.962074094266!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce0b4f2e0e9d%3A0x6e5d2e4c5b8e9f0a!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Travel India Office Location - Mumbai, Maharashtra"
+                    aria-label="Google Map showing Travel India office location in Mumbai, Maharashtra">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us Section -->
+    <section class="why-contact-section">
+        <div class="container">
+            <h2 class="section-title">Why Contact Us</h2>
+            <p class="section-subtitle">Experience the best travel planning service</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Fast Support</h3>
+                    <p>Get quick responses to all your travel queries within 24 hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Travel Experts</h3>
+                    <p>Consult with experienced travel professionals who know India inside out</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Booking</h3>
+                    <p>Book with confidence using our secure and reliable booking platform</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Assistance</h3>
+                    <p>Round-the-clock support for your travel needs and emergencies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about our services</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I book a travel package?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can book a travel package through our website, by calling us at +91 12345 67890, or by sending us an email at support@travelindia.com. Our travel experts will guide you through the entire booking process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards, debit cards, net banking, UPI, and cash payments. For international travelers, we also accept PayPal and bank transfers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I customize my travel itinerary?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! We specialize in creating customized travel itineraries tailored to your preferences, budget, and schedule. Contact our travel experts to discuss your requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide travel insurance?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive travel insurance options to protect your trip. Our team will help you choose the best insurance plan based on your travel needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your cancellation policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our cancellation policy varies by package type. Generally, cancellations made 30 days before travel receive a full refund minus processing fees. Please contact us for specific cancellation terms related to your booking.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I get travel documents and vouchers?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your booking is confirmed, we will send all travel documents, vouchers, and itineraries to your registered email address. You can also access them through your account on our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel India</h3>
+                    <p>Your trusted partner for discovering the beauty of India. We create unforgettable travel experiences tailored to your dreams.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                       >
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../destination/destination.html">Destinations</a></li>
+                        <li><a href="../Hotel-content/Hotels.html">Hotels</a></li>
+                        <li><a href="../package/package.html">Packages</a></li>
+                        <li><a href="../contact/Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> support@travelindia.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel India Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Popup Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+            <button class="modal-btn" id="closeModal">Close</button>
+        </div>
+    </div>
+
+</body>
+</html>

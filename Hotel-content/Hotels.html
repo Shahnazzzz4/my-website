@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Site</title>
+  <link rel="stylesheet" href="hotel.css">
+  <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+
+<body>
+   <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>Travel India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../destination/destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="../Hotel-content/Hotels.html" class="nav-link active">Hotels</a></li>
+                <li><a href="../package/package.html" class="nav-link">Packages</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+ 
+
+  <section class="hero">
+    <img class="bg" src="C:\Users\DELL\Desktop\final\imag folder\hotels\h1.jpeg"alt="Plane flying">
+    <div class="hero-content">
+      <h1>See The Luxury Hotels</h1>
+      <p>Discover your next getaway — book flights, explore destinations, and make memories.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Explore Flights</button>
+        <button class="btn-secondary">See Packages</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hotels-section" id="hotels">
+    <div class="section-header">
+      <h2>Premium Hotels Across India</h2>
+      <p>Experience world-class hospitality at our carefully selected luxury hotels</p>
+    </div>
+
+    <div class="hotels-grid">
+      <!-- Hotel 1: Taj Lake Palace -->
+      <article class="hotel-card">
+        <div class="hotel-image-container">
+          <img src="C:\Users\DELL\Desktop\final\imag folder\hotels\taj lakh palac.jpg"
+            alt="Taj Lake Palace Udaipur - Luxury hotel on Lake Pichola" class="hotel-image">
+
+        </div>
+        <div class="hotel-content">
+          <div class="hotel-header">
+            <h3 class="hotel-name">Taj Lake Palace</h3>
+            <div class="hotel-location">Udaipur, Rajasthan</div>
+          </div>
+          <div class="hotel-price">
+            <span class="price-amount">₹35,000</span>
+            <span class="price-label">per day</span>
+          </div>
+          <p class="hotel-description">
+            An iconic floating palace on Lake Pichola offering unparalleled luxury with stunning views, royal heritage,
+            and exceptional service.
+          </p>
+
+          <button class="btn-book-now" onclick="bookHotel('Taj Lake Palace')">Book Now</button>
+        </div>
+      </article>
+
+      <!-- Hotel 2: The Leela Palace -->
+      <article class="hotel-card">
+        <div class="hotel-image-container">
+          <img src="../imag folder/hotels/the leela palace.jpg"
+            alt="The Leela Palace New Delhi - Luxury hotel with modern amenities" class="hotel-image">
+
+        </div>
+        <div class="hotel-content">
+          <div class="hotel-header">
+            <h3 class="hotel-name">The Leela Palace</h3>
+            <div class="hotel-location">New Delhi</div>
+          </div>
+          <div class="hotel-price">
+            <span class="price-amount">₹28,000</span>
+            <span class="price-label">per day</span>
+          </div>
+          <p class="hotel-description">
+            A palatial luxury hotel in the heart of New Delhi, combining contemporary elegance with timeless Indian
+            hospitality.
+          </p>
+
+          <button class="btn-book-now" onclick="bookHotel('The Leela Palace')">Book Now</button>
+        </div>
+      </article>
+
+      <!-- Hotel 4: JW Marriott -->
+            <article class="hotel-card">
+                <div class="hotel-image-container">
+                    <img src="C:\Users\DELL\Desktop\final\imag folder\hotels\taj.jpeg" alt="JW Marriott Mumbai - Modern luxury hotel in Mumbai" class="hotel-image">
+                   
+                </div>
+                <div class="hotel-content">
+                    <div class="hotel-header">
+                        <h3 class="hotel-name">The Taj Mahal palace</h3>
+                        <div class="hotel-location">Mumbai, Maharashtra</div>
+                    </div>
+                    <div class="hotel-price">
+                        <span class="price-amount">₹22,000</span>
+                        <span class="price-label">per day</span>
+                    </div>
+                    <p class="hotel-description">
+                        Contemporary luxury hotel in the heart of Mumbai's business district, featuring modern amenities and exceptional dining options.
+                    </p>
+                  
+                    <button class="btn-book-now" onclick="bookHotel('JW Marriott Mumbai')">Book Now</button>
+                </div>
+            </article>
+
+            <!-- Hotel 5: Taj Exotica -->
+            <article class="hotel-card">
+                <div class="hotel-image-container">
+                    <img src="C:\Users\DELL\Desktop\final\imag folder\hotels\h5.jpeg" alt="Taj Exotica Goa - Beachfront luxury resort in Goa" class="hotel-image">
+                   
+                </div>
+                <div class="hotel-content">
+                    <div class="hotel-header">
+                        <h3 class="hotel-name">Grand Hyatt</h3>
+                        <div class="hotel-location">Goa</div>
+                    </div>
+                    <div class="hotel-price">
+                        <span class="price-amount">₹11,654</span>
+                        <span class="price-label">per day</span>
+                    </div>
+                        A pristine beachfront resort surrounded by landscaped gardens, offering luxury villas and world-class spa facilities.
+                    </p>
+                   
+                    <button class="btn-book-now" onclick="bookHotel('Grand hyatt Goa')">Book Now</button>
+                </div>
+            </article>
+
+            <!-- Hotel 6: The Orchid -->
+            <article class="hotel-card">
+                <div class="hotel-image-container">
+                    <img src="C:\Users\DELL\Desktop\final\imag folder\hotels\Wildflower Hall, An Oberoi Resort, Shimla.jpg" alt="The Orchid Shimla - Mountain resort in Shimla hills" class="hotel-image">
+                   
+                </div>
+                <div class="hotel-content">
+                    <div class="hotel-header">
+                        <h3 class="hotel-name">Wildflowre Hail, An Oberoi Resort</h3>
+                        <div class="hotel-location">Shimla, Himachal Pradesh</div>
+                    </div>
+                    <div class="hotel-price">
+                        <span class="price-amount">₹24,700</span>
+                        <span class="price-label">per Day</span>
+                    </div>
+                    <p class="hotel-description">
+                        Nestled in the hills of Shimla, offering breathtaking mountain views, cozy accommodations, and warm hospitality.
+                    </p>
+                  
+                    <button class="btn-book-now" onclick="bookHotel('The Orchid Shimla')">Book Now</button>
+                </div>
+            </article>
+
+
+      <!-- Hotel 3: Oberoi Amarvilas -->
+      <article class="hotel-card">
+        <div class="hotel-image-container">
+          <img src="C:\Users\DELL\Desktop\final\imag folder\hotels\ITc Agra.png"
+            alt="Oberoi Amarvilas Agra - Luxury hotel with Taj Mahal view" class="hotel-image">
+
+        </div>
+        <div class="hotel-content">
+          <div class="hotel-header">
+            <h3 class="hotel-name">ITC Mughal, a Luxury</h3>
+            <div class="hotel-location">Agra, Uttar Pradesh</div>
+          </div>
+          <div class="hotel-price">
+            <span class="price-amount">₹15,339</span>
+            <span class="price-label">per Day</span>
+          </div>
+          <p class="hotel-description">
+            Luxury resort offering unobstructed views of the Taj Mahal from every room, with Mughal-inspired
+            architecture and world-class service.
+          </p>
+
+          <button class="btn-book-now" onclick="bookHotel('Oberoi Amarvilas')">Book Now</button>
+        </div>
+      </article>
+    </section>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel India</h3>
+                    <p>Your trusted partner for discovering the beauty of India. We create unforgettable travel experiences tailored to your dreams.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                       >
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../destination/destination.html">Destinations</a></li>
+                        <li><a href="../Hotel-content/Hotels.html">Hotels</a></li>
+                        <li><a href="../package/package.html">Packages</a></li>
+                        <li><a href="../contact/Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> support@travelindia.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel India Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+      <!-- <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+        menuIcon.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script> -->
+
+</body>
+
+</html>

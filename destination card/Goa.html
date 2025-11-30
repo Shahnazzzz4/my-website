@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Goa| Explore the Goa</title>
+    
+    <!-- Preconnect for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>Travel India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#hotels" class="nav-link">Hotels</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="destination-hero">
+        <div class="hero-image">
+            <img src="../imag folder/kerala/kovalam3.jpeg" alt="Kerala Backwaters - Serene houseboat experience through tranquil waterways" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="destination-title">Kerala</h1>
+            <p class="destination-subtitle">God's Own Country - A Tropical Paradise</p>
+        </div>
+    </section>
+
+    <!-- Destination Content -->
+    <section class="destination-content">
+        <div class="container">
+            <!-- Full Description -->
+            <div class="content-section">
+                <h2 class="section-title">About Goa</h2>
+                <p class="content-text">
+                   Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations. Goa is also known for its beaches, ranging from popular stretches at Baga and Palolem to those in laid-back fishing villages such as Agonda.
+                </p>
+                <p class="content-text">
+                   Goa had many old names, including Gomantak, Gomant, Govapuri, Gopakapattana, and Govem, as it was known by different names in ancient and medieval times. Historically, it was also known as Sindabur by Arabian geographers and was referred to as "Velha Goa" (Old Goa) by the Portuguese. 
+Some famous things to buy in Goa include cashew nuts, Feni (a local spirit), and Goan spices. You can also find unique handicrafts like Azulejos tiles and coconut crafts, traditional textiles like Kunbi sarees, and local food products such as Bebinca cake and kokum sherbet. Art, music, and local wines are also popular souvenirs
+
+
+                </p>
+
+                 <h2 class="section-title">Goa is famous for</h2>
+                <p class="content-text">
+                  Goa is famous for its beaches, vibrant nightlife, unique cuisine, and Portuguese-influenced architecture. Visitors also enjoy water sports, historical churches, and a lively market scene
+                </p>
+            </div>
+
+            <section class="slide-carousel">
+  <div class="wrapper">
+    <div class="section-head">
+      <h2>Featured Destinations</h2>
+      <div class="controls">
+        <button class="arrow-btn" id="prev" aria-label="Previous" title="Previous">&#10094;</button>
+        <button class="arrow-btn" id="next" aria-label="Next" title="Next">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="carousel" id="carousel" tabindex="0" aria-roledescription="carousel">
+      <div class="cards-track" id="track">
+        <!-- Card 1 -->
+        <div class="card" data-index="0">
+          <img src="../imag folder/Aagra/tjj.jpeg" alt="Sri Venkateswara Temple">
+          <div class="card-body">
+            <h3>Taj Mahal</h3>
+            <p>UNESCO World Heritage Site and one of the Seven Wonders of the World. A symbol of eternal love built entirely of white marble.</p>
+           
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" data-index="1">
+          <img src="../imag folder/Aagra/fort2.jpeg" alt="Shore Temple">
+          <div class="card-body">
+            <h3>Agra Fort</h3>
+            <p>Red sandstone fort showcasing Mughal architecture. Contains palaces, mosques, and halls built by different Mughal emperors.</p>
+           
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" data-index="2">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/French_Quarter_20191028121257.jpg" alt="French Quarter">
+          <div class="card-body">
+            <h3>Fatehpur Sikri</h3>
+            <p>Abandoned Mughal city featuring stunning red sandstone architecture. Home to the Buland Darwaza and Jama Masjid.</p>
+           
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-index="3">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Golden_Temple_20190401105737.jpg" alt="Golden Temple">
+          <div class="card-body">
+            <h3>Itimad-ud-Daulah</h3>
+            <p>Known as the "Baby Taj", this beautiful tomb is often considered a draft of the Taj Mahal with intricate marble inlay work.</p>
+           
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+           <div class="card" data-index="3">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Golden_Temple_20190401105737.jpg" alt="Golden Temple">
+          <div class="card-body">
+            <h3>Mughlai Cuisine</h3>
+            <p>Indulge in authentic Mughlai dishes like petha (sweet), kebabs, biryani, and traditional street food.</p>
+           
+          </div>
+        </div>
+
+
+         <div class="card" data-index="3">
+          <img src="https://www.holidify.com/images/cmsuploads/compressed/Golden_Temple_20190401105737.jpg" alt="Golden Temple">
+          <div class="card-body">
+            <h3>Marble Inlay Work</h3>
+            <p>Shop for exquisite marble handicrafts, leather goods, and carpets. Agra is famous for its marble inlay work (Pietra Dura).</p>
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+     <!-- Map Section -->
+            <div class="content-section">
+                <h2 class="section-title">Location Map</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400553850174!2d78.0421552!3d27.1750151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Taj Mahal Location Map - Agra, Uttar Pradesh"
+                        aria-label="Google Map showing Taj Mahal location in Agra">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel India</h3>
+                    <p>Your trusted partner for discovering the beauty of India. We create unforgettable travel experiences tailored to your dreams.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#destinations">Destinations</a></li>
+                        <li><a href="#hotels">Hotels</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> support@travelindia.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel India Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- <script src="script.js"></script> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+

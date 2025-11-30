@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>package</title>
+  <link rel="stylesheet" href="package.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+       <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+  
+  <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-route"></i>
+                <span>Travel India</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../destination/destination.html" class="nav-link">Destinations</a></li>
+                <li><a href="../Hotel-content/Hotels.html" class="nav-link">Hotels</a></li>
+                <li><a href="../package/package.html" class="nav-link active">Packages</a></li>
+                <li><a href="../contact/Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+  
+  <section class="hero">
+    <img class="bg" src="../imag folder/Manali/manali package.jpeg" alt="Plane flying">
+    <div class="hero-content">
+      <h1>See the top package</h1>
+      <p>Discover your next getaway — book flights, explore destinations, and make memories.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Explore</button>
+        <button class="btn-secondary">See Packages</button>
+      </div>
+    </div>
+  </section>
+  
+    <section class="packages-section" id="packages">
+        <div class="section-header">
+            <h2>Our Premium Packages</h2>
+            <p>Discover incredible destinations across India with our carefully curated travel packages</p>
+        </div>
+
+        <div class="packages-grid">
+            <!-- Package 1: Goa Beach Escape -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Goa/beach 1.jpeg" alt="Goa Beach" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Goa Beach Escape</h3>
+                            
+                        </div>
+                        <div class="package-price">₹24,999<span>/person</span></div>
+                    </div>
+                    
+                    <button class="btn-view-details" onclick="viewDetails('goa')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Package 2: Rajasthan Royal Tour -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Rajathan/tour.jpeg" alt="Rajasthan Palace" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Rajasthan Royal Tour</h3>
+                           
+                        </div>
+                        <div class="package-price">₹45,999<span>/person</span></div>
+                    </div>
+                   
+                    <button class="btn-view-details" onclick="viewDetails('rajasthan')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Package 3: Himachal Adventure Trip -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Manali/WhatsApp Image 2025-11-15 at 9.14.15 PM.jpeg" alt="Himachal Mountains" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Himachal Adventure Trip</h3>
+                            
+                        </div>
+                        <div class="package-price">₹32,999<span>/person</span></div>
+                    </div>
+                   
+                    <button class="btn-view-details" onclick="viewDetails('himachal')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Package 4: Kerala Backwater Retreat -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Mumbai/gti2.jpeg" alt="Kerala Backwaters" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Kerala Backwater Retreat</h3>
+                           
+                        </div>
+                        <div class="package-price">₹38,999<span>/person</span></div>
+                    </div>
+                  
+                    <button class="btn-view-details" onclick="viewDetails('kerala')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Package 5: Kashmir Paradise Tour -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Rajathan/jal mahal.jpeg" alt="Kashmir Valley" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Kashmir Paradise Tour</h3>
+                           
+                        </div>
+                        <div class="package-price">₹42,999<span>/person</span></div>
+                    </div>
+                  
+                    <button class="btn-view-details" onclick="viewDetails('kashmir')">View Details</button>
+                </div>
+            </div>
+
+            <!-- Package 6: Golden Triangle -->
+            <div class="package-card">
+                <div class="package-image-container">
+                    <img src="../imag folder/Aagra/tajj mehl.jpeg" alt="Taj Mahal" class="package-image">
+                </div>
+                <div class="package-content">
+                    <div class="package-header">
+                        <div>
+                            <h3 class="package-title">Golden Triangle</h3>
+                           
+                        </div>
+                        <div class="package-price">₹28,999<span>/person</span></div>
+                    </div>
+                   
+                    <button class="btn-view-details" onclick="viewDetails('golden-triangle')">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================
+         Why Choose Us Section
+         ============================================ -->
+    <section class="why-choose-us">
+        <div class="why-choose-us-container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p>We make your journey unforgettable with exceptional service and attention to detail</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Expert Curated</h3>
+                    <p>Our packages are handpicked by travel experts with years of experience in creating memorable journeys across India.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Best Value</h3>
+                    <p>We offer competitive pricing without compromising on quality, ensuring you get the best value for your money.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to assist you before, during, and after your trip for a hassle-free experience.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Trusted Partners</h3>
+                    <p>We work with trusted local partners and premium accommodations to ensure your comfort and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         Customer Reviews Section
+         ============================================ -->
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real experiences from travelers who explored India with us</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "The Rajasthan Royal Tour exceeded all expectations! The palaces were magnificent, and the desert safari was an unforgettable experience. Highly recommended!"
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">SP</div>
+                        <div class="reviewer-info">
+                            <h4>Sarah Patel</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Kerala backwaters package was pure bliss. The houseboat stay and Ayurvedic treatments were rejuvenating. The team was very professional and helpful throughout."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">JM</div>
+                        <div class="reviewer-info">
+                            <h4>James Mitchell</h4>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Golden Triangle tour was perfect! Seeing the Taj Mahal at sunrise was magical. The guides were knowledgeable, and everything was well organized. Worth every rupee!"
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">RK</div>
+                        <div class="reviewer-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FAQ Section
+         ============================================ -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our travel packages</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">What is included in the package price?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our packages typically include accommodation, breakfast, transportation between destinations, guided tours, and entry tickets to major attractions. Some packages may also include select meals and activities. Please check individual package details for specific inclusions.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I customize the package according to my preferences?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, absolutely! We understand that every traveler is unique. You can customize any package by adding extra days, changing hotels, including additional activities, or modifying the itinerary. Contact our travel consultants to discuss your requirements.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is the cancellation policy?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Cancellation policies vary based on the package and booking date. Generally, cancellations made 30+ days before travel receive a full refund (minus processing fees). Between 15-30 days, a 50% refund applies. Cancellations within 15 days are non-refundable. Please refer to the terms and conditions during booking.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide travel insurance?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            While basic travel insurance is recommended, we can assist you in purchasing comprehensive travel insurance that covers medical emergencies, trip cancellations, and baggage loss. Our team will help you choose the right insurance plan for your trip.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What are the payment options available?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We accept multiple payment methods including credit/debit cards, bank transfers, UPI, and digital wallets. You can pay a booking amount (typically 25-30%) to confirm your reservation, with the balance payable 15 days before travel.
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are flights included in the package?</div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Package prices typically do not include international or domestic flights unless specifically mentioned. However, we can help you book flights at competitive rates. Our team will provide flight options and assist with the booking process.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel India</h3>
+                    <p>Your trusted partner for discovering the beauty of India. We create unforgettable travel experiences tailored to your dreams.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../destination/destination.html">Destinations</a></li>
+                        <li><a href="../Hotel-content/Hotels.html">Hotels</a></li>
+                        <li><a href="../package/package.html">Packages</a></li>
+                        <li><a href="../contact/Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Tour Packages</a></li>
+                        <li><a href="#">Hotel Bookings</a></li>
+                        <li><a href="#">Flight Tickets</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 12345 67890</li>
+                        <li><i class="fas fa-envelope"></i> support@travelindia.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Travel India Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
